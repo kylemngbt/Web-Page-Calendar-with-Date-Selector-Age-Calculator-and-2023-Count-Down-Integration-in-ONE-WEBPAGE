@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <title>Kyle Mangabat</title>
+ 
+    <!-- bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="countdown.css" />
+    <link rel="stylesheet" href="calendar.css" />
+    <link rel="stylesheet" href="agecalc.css" />
+ 
+</head>
+<body>
+  <div id="main_container">
+    <div id="birth_date_input">Birth Date: <input type="date" id="birth_date"></div>
+    <br />
+    <div id="calculate">Calculate your age</div>
+
+    <div id="age_container"><span id="exact_age">Age</span></div>
+
+  </div>
+
+ <div class="container">
+  <div class="calendar">
+    <div class="month">
+      <i class="fas fa-angle-left prev"></i>
+      <div class="date">
+        <h1></h1>
+        <p></p>
+      </div>
+      <i class="fas fa-angle-right next"></i>
+    </div>
+    <div class="weekdays">
+      <div>Sun</div>
+      <div>Mon</div>
+      <div>Tue</div>
+      <div>Wed</div>
+      <div>Thu</div>
+      <div>Fri</div>
+      <div>Sat</div>
+    </div>
+    <div class="days"></div>
+  </div>
+</div>
+
+<div class="timer">
+  <div class="box">
+    <h2 id="days"></h2>
+    <h4>Days</h4>
+  </div>
+  <div class="box">
+    <h2 id="hrs"></h2>
+    <h4>Hours</h4>
+  </div>
+  <div class="box">
+    <h2 id="mins"></h2>
+    <h4>Minutes</h4>
+  </div>
+  <div class="box">
+    <h2 id="secs"></h2>
+    <h4>Seconds</h4>
+  </div>
+</div>
+<script src="calendar.js"></script>
+<script src="countdown.js"></script>
+<script src="agecalc.js"></script>
+ 
+</body>
+</html>
